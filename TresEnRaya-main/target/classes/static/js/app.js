@@ -149,7 +149,7 @@ function startGame() {
 	joinForm.style.display = "none";
     
     if (board.players.length === 1) {
-        scoreBoard[1].textContent = 'waiting...';
+        scoreBoard[1].textContent = 'esperando...';
     }
 
     board.addTable(container);
