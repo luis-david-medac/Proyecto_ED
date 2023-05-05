@@ -39,7 +39,7 @@ function initJoinForm(){
 	board = new Board(scoreBoard);
 	startBtn.setAttribute('disabled', true);
 	nameInput.setAttribute('disabled', true);
-	nameInput.setAttribute('placeholder', 'Loading...');
+	nameInput.setAttribute('placeholder', 'CARGANDO...');
 }
 
 function start(){
@@ -149,7 +149,7 @@ function startGame() {
 	joinForm.style.display = "none";
     
     if (board.players.length === 1) {
-        scoreBoard[1].textContent = 'waiting...';
+        scoreBoard[1].textContent = 'ESPERANDO...';
     }
 
     board.addTable(container);
