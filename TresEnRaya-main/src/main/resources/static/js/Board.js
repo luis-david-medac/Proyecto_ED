@@ -7,7 +7,8 @@ class Board {
         this.cells = [];
         this.players = [];
         this.ready = false;   
-        
+        this.score = 0; 
+        this.score2= 0;
         this.createTable();
     }
 
@@ -126,12 +127,21 @@ class Board {
     	let looser;
     	if(winner === this.players[0].name){
     		looser = this.players[1].name;
+            this.score++;
     	} else {
     		looser = this.players[0].name;
+            this.score2++;
     	}
     	
     	alert(winner+" ha ganado! "+looser+" ha perdido.");
-    	
+
+        console.log(`score del jugador 1: ${this.score}`)
+        console.log(`score del jugador 2: ${this.score2}`)
+const score1=document.getElementById('score1');
+score1.innerHTML=this.score;
+
+const score2 = document.getElementById('score2')
+score2.innerHTML=this.score2;
     	this.disableAll();
         this.highlightCells(pos);
     }
