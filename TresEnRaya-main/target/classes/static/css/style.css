@@ -95,3 +95,8 @@ body {
 .scoreBoard span.active {
     border-bottom: 4px solid #F286A0;
 }
+
+
+.contenedor_scores span{
+font-size: 30px;
+}
