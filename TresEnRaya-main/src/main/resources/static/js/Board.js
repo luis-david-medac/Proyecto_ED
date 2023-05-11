@@ -144,10 +144,8 @@ class Board {
         const reloadButton = document.createElement('button');
         reloadButton.innerText = 'Reiniciar';
         reloadButton.addEventListener('click', () => {
-            if (confirm('¿Deseas reiniciar el juego?')) {
-                this.removePopup(popup);
-                location.reload();
-            }
+            this.removePopup(popup);
+            location.reload();
         });
 
         const message = document.createElement('div');
@@ -170,10 +168,8 @@ class Board {
         const reloadButton = document.createElement('button');
         reloadButton.innerText = 'Reiniciar';
         reloadButton.addEventListener('click', () => {
-            if (confirm('¿Deseas reiniciar el juego?')) {
-                this.removePopup(popup);
-                location.reload();
-            }
+            this.removePopup(popup);
+            location.reload();
         });
 
         const message = document.createElement('div');
@@ -243,3 +239,29 @@ class Board {
         }
     }
 }
+
+//Esta parte se encarga de cambiar el fondo de la página
+
+document.getElementById('fall').addEventListener('click', function () {
+    document.body.style.backgroundImage = 'url(/Img/otoño.gif)';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundSize = 'cover';
+});
+
+document.getElementById('summer').addEventListener('click', function () {
+    document.body.style.backgroundImage = 'url(/Img/verano.gif)';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundSize = 'cover';
+});
+
+document.getElementById('spring').addEventListener('click', function () {
+    document.body.style.backgroundImage = 'url(/Img/primavera.gif)';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundSize = 'cover';
+});
+
+document.getElementById('winter').addEventListener('click', function () {
+    document.body.style.backgroundImage = 'url(/Img/invierno.gif)';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundSize = 'cover';
+});
