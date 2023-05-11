@@ -25,6 +25,14 @@
 					<span id="p2Score"></span>
 				</h1>
 			</div>
+
+		</div>
+		<div class="d-flex">
+			<div style="color: red;font-size: 70px;" id="timer">Tiempo restante:<span id="countdown"></span></div>
+		</div>
+		<div style="position:relative; z-index:1; left:95%; top: -90px; ; font-size: 30px;">
+			<span>Jugador 1: </span><span id="score1">0</span> <br>
+			<span>Jugador 2: </span><span id="score2">0</span>
 		</div>
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-3" id="joinForm">
@@ -39,58 +47,24 @@
 						</div>
 						<div style="text-align: center; margin-top: 10px;">
 							<button class="btn btn-primary rounded-pill px-3" id="winter">Invierno</button>
-							<script>
-								document.getElementById('winter').addEventListener('click', function () {
-									document.body.style.backgroundImage = 'url(/Img/invierno.gif)';
-									document.body.style.backgroundRepeat = 'no-repeat';
-									document.body.style.backgroundSize = 'cover';
-								});
-							</script>
 							<button class="btn btn-primary rounded-pill px-3" id="spring">Primavera</button>
-							<script>
-								document.getElementById('spring').addEventListener('click', function () {
-									document.body.style.backgroundImage = 'url(/Img/primavera.gif)';
-									document.body.style.backgroundRepeat = 'no-repeat';
-									document.body.style.backgroundSize = 'cover';
-								});
-							</script>
 							<button class="btn btn-primary rounded-pill px-3" id="summer">Verano</button>
-							<script>
-								document.getElementById('summer').addEventListener('click', function () {
-									document.body.style.backgroundImage = 'url(/Img/verano.gif)';
-									document.body.style.backgroundRepeat = 'no-repeat';
-									document.body.style.backgroundSize = 'cover';
-								});
-							</script>
 							<button class="btn btn-primary rounded-pill px-3" id="fall">Otoño</button>
-							<script>
-								document.getElementById('fall').addEventListener('click', function () {
-									document.body.style.backgroundImage = 'url(/Img/otoño.gif)';
-									document.body.style.backgroundRepeat = 'no-repeat';
-									document.body.style.backgroundSize = 'cover';
-								});
-							</script>
 						</div>
 						<div style="text-align: center; margin-top: 10px;">
-						<audio controls>
-						<source src="music/8bit_song.mp3" type="audio/mp3">	
-						</audio>
+							<audio controls>
+								<source src="music/8bit_song.mp3" type="audio/mp3">
+							</audio>
 						</div>
 
 					</div>
 				</div>
 			</div>
-
-<div class="contenedor_scores">
-	<span>Jugador 1:</span><span id="score1">0</span> <br><span>Jugador 2:</span><span id="score2">0</span>
-
-</div>
-
-			<div style="color: red; font-size: 70px;" id="timer">Tiempo restante: <span id="countdown"></span></div>
-			<div class="col-sm-6 col-sm-offset-3" id="gameBoard"></div>
+			<div class="col-sm-6 col-sm-offset-3" id="gameBoard">
+			</div>
 		</div>
 	</div>
-    <script src="/js/timer.js"></script>
+	<script src="/js/timer.js"></script>
 	<script src="/js/Board.js"></script>
 	<script src="/js/app.js"></script>
 
